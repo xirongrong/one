@@ -21,10 +21,16 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ng-controller="app">
+     <div ng-controller="xrr1">
+    	<button ng-click="fn()" ui-sref="c">aa</button>
+       <div ui-view></div> 
+    </div>
+    <div ng-controller="xrr">
+    	<button ng-click="fn1()" ui-sref="b">bb</button>
     	 <div ui-view></div>
     </div>
    
+  
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -51,6 +57,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/xrr.js"></script>
+        <script src="scripts/controllers/xrr1.js"></script>
         <!-- endbuild -->
 </body>
 </html>

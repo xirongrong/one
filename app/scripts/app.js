@@ -13,21 +13,17 @@ angular
   	
   }])
 .config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider){
-	$stateProvider.state("a",{
-		url:"/a",
-		templateUrl:"views/a.html",
-		controller:"xrr"
-	})
-	.state("a.b",{
+	$stateProvider.state("b",{
 		url:"/b",
-		templateUrl:"views/b.html"
+		templateUrl:"views/b.html",
+		controller:"xrr"
 		
 	})
-	.state("a.c",{
+	.state("c",{
 		url:"/c",
-		templateUrl:"views/c.html"		
+		templateUrl:"views/c.html",
+		controller:"xrr1"
 	})
-	$urlRouterProvider.when('','/a');
 }])
 
  
